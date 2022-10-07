@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript"
+	        src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+        <script type="text/javascript" src="js/dashboard-blgu.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link href="css/dashboard-boot-styles.css" rel="stylesheet">
+        <link href="css/dashboard-style.css" rel="stylesheet">
+        <title>BLGU</title>
+    </head>
+    <body onload="blguViz();">
+        <div class="dashboard-sidebar">
+            <span class="fs-4" style="color: #00ff7f; margin-left: 37px;">MODULES</span>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="index.html" target="_self"><p class="dashboard-link">FO XII KPI STATUS AND FINDINGS</p></a>
+                </li>
+                <li class="nav-item">
+                    <a href="bdrrmc.html" target="_self"><p class="dashboard-link">BDRRMC</p></a>
+                </li>
+                <li class="nav-item">
+                    <a href="hh.html" target="_self"><p class="dashboard-link">HH BENES</p></a>
+                </li>
+                <li class="nav-item">
+                    <a href="povreduc.html" target="_self"><p class="dashboard-link">POVERTY REDUCTION</p></a>
+                </li>
+                <li class="nav-item">
+                    <a href="directhh.html" target="_self"><p class="dashboard-link">DIRECT HH BENES</p></a>
+                </li>
+                <li class="nav-item">
+                    <a href="ncddpaf.html" target="_self"><p class="dashboard-link">NCDDP AF PHYSICAL STATUS AND SPCR</p></a>
+                </li>
+                <li class="nav-item">
+                    <a href="brgyiso.html" target="_self"><p class="dashboard-link">BRGY ISO</p></a>
+                </li>
+                <li class="nav-item">
+                    <a href="bhert.html" target="_self"><p class="dashboard-link">BHERT</p></a>
+                </li>
+                <li class="nav-item">
+                    <a href="blgu.html" target="_self"><p class="dashboard-link">BLGU</p></a>
+                </li>
+                <li class="nav-item">
+                    <a href="grs.html" target="_self"><p class="dashboard-link">GRS</p></a>
+                </li>
+                <li class="nav-item">
+                    <a href="set.html" target="_self"><p class="dashboard-link">SET</p></a>
+                </li>
+                <li class="nav-item">
+                    <a href="female.html" target="_self"><p class="dashboard-link">FEMALE PARTICIPATION</p></a>
+                </li>
+                <li class="nav-item">
+                    <a href="pta.html" target="_self"><p class="dashboard-link">PTA</p></a>
+                </li>
+                <li class="nav-item">
+                    <a href="sp.html" target="_self"><p class="dashboard-link">SP STATUS</p></a>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-dark"
+                style="background-color: rgba(18, 98, 159, 0.58);">
+            <div class="container">
+                <img class="logo" src="images/dswd_kalahi_logo2.png" style="width: 500px; height: 100px;" alt="Dashboard">
+            </div>
+        </nav>
+        <div id="blguBoard" class="container" style="display: block;"></div>
+        <div class="navbar navbar-expand-sm" style="background-color: rgba(18, 98, 159, 0.60);">
+            <footer class="container" style="margin: auto; display: block;">
+                <p class="text-center" style="color: #00ff7f;">
+                    &copy; 2022 DSWD FIELD OFFICE 12
+                </p>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+</html>
