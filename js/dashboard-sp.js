@@ -1,7 +1,7 @@
 function spViz(){
     
     let containerDiv = document.getElementById("spBoard"),
-    url = "https://public.tableau.com/views/SPSTATUS/Dashboard6",
+    url = "https://public.tableau.com/views/SPSTATUS/Dashboard5",
     options = {
         width: 1700,
         height: 1300,

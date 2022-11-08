@@ -1,6 +1,6 @@
 function femaleViz(){
     let containerDiv = document.getElementById("femaleBoard"),
-    url = "https://public.tableau.com/views/FEMALEANDLABORDATA/Dashboard8",
+    url = "https://public.tableau.com/views/FEMALEANDLABOR/Dashboard6",
     options = {
         width: 1100,
         height: 800,
