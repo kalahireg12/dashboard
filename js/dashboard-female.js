@@ -3,7 +3,7 @@ function femaleViz(){
     url = "https://public.tableau.com/views/FEMALEANDLABOR/Dashboard6",
     options = {
         width: 1100,
-        height: 800,
+        height: 1300,
         hideTabs: true,
         onFirstInteractive: function () {
             console.log("Running.....");
