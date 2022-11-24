@@ -1,87 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript"
+  <head>
+  	<title>GRS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript"
 	        src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
         <script type="text/javascript" src="js/dashboard-grs.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-        <link href="css/dashboard-boot-styles.css" rel="stylesheet">
-        <link href="css/dashboard-style.css" rel="stylesheet">
-        <title>GRS</title>
-    </head>
-    <body onload="grsViz();">
-        <div class="dashboard-sidebar" >
-            <span class="fs-4" style="color: #00ff7f; margin-left: 37px;">MODULES</span>
-            <ul class="nav nav-pills flex-column mb-auto">
-                <li class="nav-item">
-                    <a href="index.html" target="_self"><p class="dashboard-link">FO XII KPI STATUS AND FINDINGS</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="bdrrmc.html" target="_self"><p class="dashboard-link">BDRRMC</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="hh.html" target="_self"><p class="dashboard-link">HH BENES</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="povreduc.html" target="_self"><p class="dashboard-link">POVERTY REDUCTION</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="directhh.html" target="_self"><p class="dashboard-link">DIRECT HH BENES</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="ncddpaf.html" target="_self"><p class="dashboard-link">NCDDP AF PHYSICAL STATUS AND SPCR</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="brgyiso.html" target="_self"><p class="dashboard-link">BRGY ISO</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="bhert.html" target="_self"><p class="dashboard-link">BHERT</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="blgu.html" target="_self"><p class="dashboard-link">BLGU</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="grs.html" target="_self"><p class="dashboard-link">GRS</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="set.html" target="_self"><p class="dashboard-link">SET</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="female.html" target="_self"><p class="dashboard-link">FEMALE PARTICIPATION</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="pta.html" target="_self"><p class="dashboard-link">PTA</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="setmasterlist.html" target="_self"><p class="dashboard-link">SET MASTERLIST</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://docs.google.com/spreadsheets/d/1aNMwZmaSbtmnFOu3Q36dSgcVT9ip4ApOtxcKTbEMzvc/edit?usp=share_link" target="_self"><p class="dashboard-link">FO XII KC COMPENDIUM</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://drive.google.com/drive/folders/1A8p3aFf3DWryEu7coY8_t2ojXhLc3a_G?usp=sharing" target="_self"><p class="dashboard-link">KALAHI APP TOOLS</p></a>
-                </li>
-            </ul>
+        <script src="https://kit.fontawesome.com/f6191538e4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-footer.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body onload="grsViz();">
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
         </div>
-        <nav class="navbar navbar-expand-sm navbar-dark"
-                style="background-color: rgba(18, 98, 159, 0.58);">
-            <div class="container">
-                <img class="logo" src="images/dswd_kalahi_logo2.png" style="width: 500px; height: 100px;" alt="Dashboard">
+	  		<h1><a class="logo" style="background-color: crimson;">MODULES</a></h1>
+        <ul class="list-unstyled components mb-5">
+          <li>
+            <a href="index.html"><span class="fa-solid fa-home mr-3"></span> FO XII KPI STATUS AND FINDINGS</a>
+          </li>
+          <li>
+              <a href="bdrrmc.html"><span class="fa-solid fa-people-group"></span> BDRRMC</a>
+          </li>
+          <li>
+            <a href="hh.html"><span class="fa-solid fa-people-roof"></span> HH BENES</a>
+          </li>
+          <li>
+            <a href="povreduc.html"><span class="fa-solid fa-person-arrow-down-to-line"></span> POVERTY REDUCTION</a>
+          </li>
+          <li>
+            <a href="directhh.html"><span class="fa-solid fa-people-line"></span> DIRECT HH BENES</a>
+          </li>
+          <li>
+            <a href="ncddpaf.html"><span class="fa-solid fa-list-check"></span> NCDDP AF PHYSICAL STATUS AND SPCR</a>
+          </li>
+          <li>
+            <a href="brgyiso.html"><span class="fa-solid fa-house-chimney-user"></span> BRGY ISO</a>
+          </li>
+          <li>
+            <a href="bhert.html"><span class="fa-solid fa-user-nurse"></span> BHERT</a>
+          </li>
+          <li>
+            <a href="blgu.html"><span class="fa-solid fa-users-between-lines"></span> BLGU</a>
+          </li>
+          <li>
+            <a href="grs.html"><span class="fa-solid fa-people-arrows"></span> GRS</a>
+          </li>
+          <li>
+            <a href="set.html"><span class="fa-solid fa-people-carry-box"></span> SET</a>
+          </li>
+          <li>
+            <a href="setmasterlist.html"><span class="fa-solid fa-table-list"></span> SET MASTERLIST</a>
+          </li>
+          <li>
+            <a href="female.html"><span class="fa-solid fa-person-dress"></span> FEMALE PARTICIPATION</a>
+          </li>
+          <li>
+            <a href="pta.html"><span class="fa-solid fa-handshake"></span> PTA</a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/spreadsheets/d/1aNMwZmaSbtmnFOu3Q36dSgcVT9ip4ApOtxcKTbEMzvc/edit?usp=share_link"><span class="fa-solid fa-sheet-plastic"></span> FO XII KC COMPENDIUM</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/drive/folders/1A8p3aFf3DWryEu7coY8_t2ojXhLc3a_G?usp=sharing"><span class="fa-solid fa-screwdriver-wrench"></span> KALAHI APP TOOLS</a>
+          </li>
+        </ul>
+    	</nav>
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <div class="container" style="margin: 10px; display: block;">
+          <img class="logo" src="images/dswd_kalahi_logo2.png" style="width: 500px; height: 100px;" alt="Dashboard">
+      </div>
+        <div id="grsBoard"></div>
+        <footer class="footer-59391">  
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-4">
+                <div class="site-logo">
+                  <a style="color: black;">KALAHI-DSWD FIELD OFFICE 12</a>
+                </div>
+              </div>
+              <div class="col-md-8 text-md-right">
+                <ul class="list-unstyled social-icons">
+                  <li><a href="https://www.facebook.com/dswddose" class="fb"><span class="icon-facebook"></span></a></li>
+                  <li><a href="https://fo12.dswd.gov.ph/" class="tw"><span class="icon-sitemap"></span></a></li>
+                </ul>
+              </div>
             </div>
-        </nav>
-        <div id="grsBoard" class="container" style="display: block;"></div>
-        <div class="navbar navbar-expand-sm" style="background-color: rgba(18, 98, 159, 0.60);">
-            <footer class="container" style="margin: auto; display: block;">
-                <p class="text-center" style="color: #00ff7f;">
-                    &copy; 2022 DSWD FIELD OFFICE 12
-                </p>
-            </footer>
+            <div class="row">
+              <div class="col ">
+                <div class="copyright">
+                  <p><small>Copyright 2022. All Rights Reserved.</small></p>
+                </div>
+              </div>
+            </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    </body>
+      </footer>
+      </div>
+		</div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
